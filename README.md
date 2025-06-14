@@ -9,11 +9,11 @@
 ## Quick start:
 ### Initialize client
 ```python
-from SolarBypass import SlrAPI
+from SolarBypass import SlrAPI, SlrClient_Docstrings
 
 api_key="SLR-your-api-key-here"
-client=SlrAPI(api_key,IsAsync=False) # sync client
-client_async=SlrAPI(api_key,IsAsync=True) # async client
+client:SlrClient_Docstrings=SlrAPI(api_key,IsAsync=False) # sync client
+client_async:SlrClient_Docstrings=SlrAPI(api_key,IsAsync=True) # async client
 ```
 #### If no API Key provided, client operates in Free API Mode
 ### Usage
