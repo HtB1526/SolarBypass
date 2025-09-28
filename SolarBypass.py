@@ -19,7 +19,7 @@ class SlrClient_Base:
         if iskeyprovided and not iskeyprovided.startswith("SLR-"):
             raise ValueError("Not a Solar API Key")
         self.api_key=iskeyprovided
-        self.base_url=f"https://api.solar-x.top/{'premium'if api_key else'free'}/"
+        self.base_url=f"https://slr-api.htb1526.ru/{'premium'if api_key else'free'}/"
         self.request_headers={"User-Agent":f"SolarAPI-Client-py/{VERSION}"}
         if api_key:self.request_headers["x-api-key"]=api_key
 class SlrClient_Docstrings():
